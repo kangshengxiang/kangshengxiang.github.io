@@ -1,0 +1,31 @@
+# 北京康盛祥中医研究院
+
+> 北京康盛祥中医研究院以中医理论为基础，开展中医药基础研究、中西医结合方法研究，以及肿瘤相关支持性照护研究。
+
+## 主要页面
+
+- [研究院首页](https://kangshengxiang.com/)：机构简介、核心研究方向、合作方向与医学声明。
+- [肝癌中医辅助治疗研究](https://kangshengxiang.com/liver-cancer-research.html)：在规范综合治疗背景下，关注症状、功能状态、生活质量、安全性与患者报告结局。
+- [乳腺癌中医辅助治疗研究](https://kangshengxiang.com/breast-cancer-research.html)：面向治疗全周期，关注症状管理、康复、生活质量、安全性与长期随访。
+- [English home](https://kangshengxiang.com/en/): English-language institutional overview and research programme directory.
+- [Liver cancer research — English](https://kangshengxiang.com/en/liver-cancer-research.html): English overview of TCM supportive care research in liver cancer.
+- [Breast cancer research — English](https://kangshengxiang.com/en/breast-cancer-research.html): English overview of TCM supportive care research in breast cancer.
+
+## 内容与证据边界
+
+- 本站内容用于研究信息与学术交流，不构成个体诊断、处方或医疗建议。
+- 中医药相关研究不替代肿瘤标准治疗。
+- 研究结论须结合具体研究设计、样本、人群、对照和随访期限理解。
+- 本站未虚构 DOI、ORCID、临床试验编号、资质、论文或研究结论。
+
+## 机构与引用
+
+- 机构：北京康盛祥中医研究院
+- 英文名：Beijing Kangshengxiang TCM Research Institute
+- 内容语言：简体中文（zh-CN）
+- 规范网站：https://kangshengxiang.com/
+- 联系邮箱：lianxi@kangshengxiang.com
+- 联系电话：400-001-0869
+- 专题页作者/发布机构：北京康盛祥中医研究院
+
+DOI 和个人作者 ORCID 仅在真实分配并经确认后加入对应页面。
