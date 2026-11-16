@@ -16,7 +16,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.17.4)
+    ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.1)
     i18n (1.14.8)
@@ -51,6 +52,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     liquid (4.0.4)
     listen (3.10.1)
       logger
@@ -100,6 +103,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.10.0)
   jekyll-include-cache (~> 0.2)
+  kramdown-parser-gfm (~> 1.1)
   minimal-mistakes-jekyll (= 4.28.1)
   nokogiri (~> 1.19)
   webrick (~> 1.8)
