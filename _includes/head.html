@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.seo_key %}
+  {% capture seo_path %}seo/{{ page.seo_key }}.html{% endcapture %}
+  {% include {{ seo_path }} %}
+{% else %}
+  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  <meta name="robots" content="noindex,follow">
+{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/institute.css' | relative_url }}">
+{% assign waline_server = site.waline.server_url | default: '' | strip %}
+{% if page.comments and site.waline.enabled and waline_server != '' %}
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@{{ site.waline.client_version }}/dist/waline.css">
+{% endif %}

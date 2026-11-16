@@ -1,0 +1,18 @@
+<!doctype html>
+{% include copyright.html %}
+<html lang="{{ page.lang | default: site.locale }}" class="no-js" dir="ltr">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="layout--{{ page.layout }} institute-site">
+    <a class="skip-link" href="#main">{% if page.lang == 'en' %}Skip to main content{% else %}跳至主要内容{% endif %}</a>
+    {% include masthead.html %}
+    <div class="initial-content">
+      {{ content }}
+      {% include waline.html %}
+    </div>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

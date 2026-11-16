@@ -1,0 +1,13 @@
+{
+  "name": "北京康盛祥中医研究院",
+  "short_name": "康盛祥中医",
+  "description": "中医药基础研究、中西医结合与肿瘤支持性照护研究平台。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf8f0",
+  "theme_color": "#214d3d",
+  "icons": [
+    { "src": "assets/logo-original.png", "sizes": "518x523", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kangshengxiang.com/#organization",
+      "name": "北京康盛祥中医研究院",
+      "alternateName": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kangshengxiang.com/assets/logo-original.png",
+        "width": 518,
+        "height": 523
+      },
+      "email": "mailto:lianxi@kangshengxiang.com",
+      "telephone": "+86-400-001-0869"
+    },
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://kangshengxiang.com/#medical-organization",
+      "name": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://kangshengxiang.com/#research-organization",
+      "name": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "knowsAbout": [
+        "乳腺癌支持性照护",
+        "中医药研究",
+        "肿瘤康复",
+        "患者报告结局"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kangshengxiang.com/#website",
+      "url": "https://kangshengxiang.com/",
+      "name": "北京康盛祥中医研究院",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kangshengxiang.com/breast-cancer-research.html#webpage",
+      "url": "https://kangshengxiang.com/breast-cancer-research.html",
+      "name": "乳腺癌中医辅助治疗研究",
+      "inLanguage": "zh-CN",
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "author": {
+        "@id": "https://kangshengxiang.com/#research-organization"
+      },
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://kangshengxiang.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kangshengxiang.com/breast-cancer-research.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://kangshengxiang.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "乳腺癌中医辅助治疗研究",
+          "item": "https://kangshengxiang.com/breast-cancer-research.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kangshengxiang.com/breast-cancer-research.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "中医研究是否替代乳腺癌标准治疗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不替代。本专题在规范诊疗基础上关注支持性照护与康复结局，不能代替手术、放疗、化疗、内分泌治疗、靶向治疗或其他经专业团队建议的治疗。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "乳腺癌中医研究可关注哪些症状？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可根据研究方案关注疲乏、睡眠、潮热、疼痛、情绪、消化道不适及功能恢复等问题，同时记录安全性和合并治疗。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "网站信息能否作为用药依据？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。本网站为研究信息介绍，不提供个体处方，也不能替代由合格医疗专业人员进行的风险评估与用药指导。"
+          }
+        }
+      ]
+    }
+  ]
+}

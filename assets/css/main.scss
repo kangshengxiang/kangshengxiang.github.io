@@ -1,0 +1,20 @@
+---
+---
+@charset "utf-8";
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
+
+// Keep the institution's original presentation on top of the theme foundations.
+html { font-size: 16px; }
+body.institute-site { padding: 0; }
+.institute-site .initial-content { flex: 1 0 auto; }
+.institute-site h1, .institute-site h2, .institute-site h3,
+.institute-site h4, .institute-site h5, .institute-site h6 {
+  font-family: inherit;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.institute-site a, .institute-site a:hover { text-decoration: none; }
+.institute-site .site-footer { position: static; width: 100%; }
+.institute-site .site-footer .footer-links a { display: inline; }
+.institute-site details { font-size: 1rem; }

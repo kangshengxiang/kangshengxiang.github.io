@@ -1,0 +1,61 @@
+Beijing Kangshengxiang TCM Research Institute — Jekyll migration
+Validation date: 16 November 2026 (Australia/Melbourne)
+
+Versions used for the successful local build
+- Ruby 2.6.10 (host-provided runtime)
+- Bundler 2.4.22
+- Jekyll 3.10.0
+- Minimal Mistakes 4.28.1 (official RubyGem, not a mock theme)
+
+PASS: JEKYLL_ENV=production bundle exec jekyll build --trace
+PASS: bundle exec ruby scripts/validate.rb
+PASS: bundle exec jekyll doctor — "Everything looks fine."
+PASS: jekyll serve on 127.0.0.1:4015; HTTP 200 homepage smoke check.
+PASS: All six generated <main> text bodies match the original source pages.
+PASS: Original logo SHA-256:
+9c0b236e21393d36803e767059a90b84ed6777e3206154f49af905c8dcd087c2
+
+Generated-output validation covers
+- All three Chinese pages plus the three retained English translations
+- Exactly one canonical and h1 per page
+- Chinese, English and x-default hreflang entries
+- Descriptions, keywords, authors, robots and social metadata
+- JSON-LD parsing and the existing organization/site/breadcrumb types
+- FAQ structured-data questions and answers matching the visible FAQs
+- Local links, scripts, stylesheets, images and fragment anchors
+- Image alt text and explicit width/height
+- Six-entry bilingual XML sitemap and robots sitemap reference
+- CNAME remains kangshengxiang.com
+- Minimal Mistakes Sass compiles into the real main.css
+- Development Gemfile excluded from generated public output
+
+Delivery includes the complete source and a prebuilt _site/ for inspection.
+The generated site uses root-relative paths and should be previewed over HTTP.
+Opening _site/index.html through file:// does not resolve root-relative assets.
+
+Two pre-existing Chinese FAQ schema answer strings differed slightly from the
+visible answers. The JSON-LD strings now exactly match the existing page text.
+No visible research claims, logo pixels, DOI values or ORCID values were added.
+
+Host-only notices: RubyGems 3.0.3 prints an old-version advisory; Faraday emits
+an optional retry-middleware notice. Neither caused build/doctor failure.
+Jekyll 3 uses the legacy Ruby Sass dependency for this theme's Sass files.
+
+Verification limits
+- Ruby 3.3/Linux is configured in the GitHub Actions workflow; that remote
+  workflow has not been executed from this delivery session.
+- The browser preview was opened; automated visual comparison, Lighthouse
+  scores and live production SEO/indexing were not measured in this migration.
+- No repository push, DNS changes, or live deployment was performed.
+- Search Console/IndexNow submission is separate from building the project.
+
+Waline integration update (16 November 2026)
+- Official @waline/client pinned to 3.16.2.
+- Integrated with Chinese/English interface and institute brand colours.
+- Comments set to false on research pages and by default for future posts.
+- Per-page language and stable thread IDs; homepages excluded.
+- Server URL configured: https://waline-hazel-delta-73.vercel.app
+- Shipped configuration hides the widget on all six pages, retaining the URL.
+- Disabled configuration and an enabled build using a non-contacted example
+  server URL are checked separately by scripts/validate-waline.rb.
+- Comment persistence and submission have not been verified against the server.

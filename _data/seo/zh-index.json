@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kangshengxiang.com/#organization",
+      "name": "北京康盛祥中医研究院",
+      "alternateName": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kangshengxiang.com/assets/logo-original.png",
+        "width": 518,
+        "height": 523
+      },
+      "description": "专注中医药基础研究、中西医结合及肿瘤支持性照护相关研究的研究机构。",
+      "email": "mailto:lianxi@kangshengxiang.com",
+      "telephone": "+86-400-001-0869"
+    },
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://kangshengxiang.com/#medical-organization",
+      "name": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "medicalSpecialty": "https://schema.org/Oncologic"
+    },
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://kangshengxiang.com/#research-organization",
+      "name": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "knowsAbout": [
+        "中医药基础研究",
+        "中西医结合",
+        "肿瘤支持性照护",
+        "肝癌相关中医研究",
+        "乳腺癌相关中医研究"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kangshengxiang.com/#website",
+      "url": "https://kangshengxiang.com/",
+      "name": "北京康盛祥中医研究院",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kangshengxiang.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://kangshengxiang.com/"
+        }
+      ]
+    }
+  ]
+}

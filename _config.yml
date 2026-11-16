@@ -1,0 +1,55 @@
+title: 北京康盛祥中医研究院
+subtitle: Beijing Kangshengxiang TCM Research Institute
+description: 中医药基础研究、中西医结合与肿瘤支持性照护研究
+url: "https://kangshengxiang.com"
+baseurl: ""
+locale: zh-CN
+timezone: Asia/Shanghai
+encoding: utf-8
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default
+logo: /assets/logo-original.png
+repository: kangshengxiang/kangshengxiang.github.io
+markdown: kramdown
+highlighter: rouge
+strict_front_matter: true
+# Public URL of the separately deployed Waline server.
+waline:
+  enabled: true
+  server_url: "https://waline-hazel-delta-73.vercel.app"
+  client_version: "3.16.2"
+sass:
+  style: compressed
+plugins:
+  - jekyll-include-cache
+# The bilingual sitemap is maintained explicitly to retain reciprocal hreflang.
+# Do not enable jekyll-sitemap simultaneously: it would generate the same path.
+include:
+  - CNAME
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - BUILD-REPORT.txt
+  - LICENSE-THEME.txt
+  - scripts
+  - vendor
+  - .bundle
+  - .github
+  - node_modules
+  - indexnow-setup.txt
+  - README.txt
+  - package.json
+  - package-lock.json
+  - .DS_Store
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: institute
+      comments: false
+  - scope:
+      path: ""
+      type: posts
+    values:
+      comments: false

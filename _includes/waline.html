@@ -1,0 +1,17 @@
+{% assign waline_server = site.waline.server_url | default: '' | strip %}
+{% if page.comments and site.waline.enabled and waline_server != '' %}
+<section class="section comments-section" aria-labelledby="comments-heading">
+  <div class="container">
+    <h2 id="comments-heading">{% if page.lang == 'en' %}Comments{% else %}留言交流{% endif %}</h2>
+    <div id="waline"
+      data-server="{{ waline_server | escape }}"
+      data-version="{{ site.waline.client_version | escape }}"
+      data-lang="{% if page.lang == 'en' %}en{% else %}zh-CN{% endif %}"
+      data-path="{{ page.comment_id | default: page.url | relative_url | escape }}">
+      <p class="waline-status" role="status">{% if page.lang == 'en' %}Loading comments…{% else %}正在加载留言…{% endif %}</p>
+    </div>
+    <noscript>{% if page.lang == 'en' %}Enable JavaScript to read or leave comments.{% else %}请启用 JavaScript 查看或发表留言。{% endif %}</noscript>
+  </div>
+</section>
+<script type="module" src="{{ '/assets/waline.js' | relative_url }}"></script>
+{% endif %}

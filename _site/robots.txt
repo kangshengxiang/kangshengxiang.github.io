@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Google、Bing、百度及其他遵守 robots.txt 的搜索引擎均可抓取公开页面。
+Sitemap: https://kangshengxiang.com/sitemap.xml
+
+# 若未来增加站内搜索或后台，请在此单独禁止其参数页与管理路径。

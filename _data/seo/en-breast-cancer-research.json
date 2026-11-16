@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kangshengxiang.com/#organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "alternateName": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kangshengxiang.com/assets/logo-original.png",
+        "width": 518,
+        "height": 523
+      },
+      "email": "mailto:lianxi@kangshengxiang.com",
+      "telephone": "+86-400-001-0869"
+    },
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://kangshengxiang.com/#medical-organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://kangshengxiang.com/#research-organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "knowsAbout": [
+        "Breast cancer supportive care",
+        "Traditional Chinese medicine research",
+        "Cancer rehabilitation",
+        "Patient-reported outcomes"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kangshengxiang.com/#website",
+      "url": "https://kangshengxiang.com/",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kangshengxiang.com/en/breast-cancer-research.html#webpage",
+      "url": "https://kangshengxiang.com/en/breast-cancer-research.html",
+      "name": "TCM Supportive Care Research in Breast Cancer",
+      "inLanguage": "en",
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "author": {
+        "@id": "https://kangshengxiang.com/#research-organization"
+      },
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://kangshengxiang.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kangshengxiang.com/en/breast-cancer-research.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kangshengxiang.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Breast Cancer Research",
+          "item": "https://kangshengxiang.com/en/breast-cancer-research.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://kangshengxiang.com/en/breast-cancer-research.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does TCM research replace standard breast cancer treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The programme studies supportive care and rehabilitation alongside appropriate treatment. It does not replace surgery, radiotherapy, chemotherapy, endocrine therapy, targeted therapy, or other treatment recommended by qualified teams."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which symptoms may be studied?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depending on the protocol, research may address fatigue, sleep, hot flushes, pain, emotional wellbeing, digestive symptoms, and functional recovery, while recording safety and concurrent treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can website information be used to make medication decisions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The website presents research information and does not provide individual prescriptions or replace professional assessment and medication guidance."
+          }
+        }
+      ]
+    }
+  ]
+}

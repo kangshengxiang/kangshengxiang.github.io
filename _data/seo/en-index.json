@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kangshengxiang.com/#organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "alternateName": "北京康盛祥中医研究院",
+      "url": "https://kangshengxiang.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://kangshengxiang.com/assets/logo-original.png",
+        "width": 518,
+        "height": 523
+      },
+      "description": "A research organization focused on traditional Chinese medicine, integrative research methods, and cancer supportive care.",
+      "email": "mailto:lianxi@kangshengxiang.com",
+      "telephone": "+86-400-001-0869"
+    },
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://kangshengxiang.com/#medical-organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "medicalSpecialty": "https://schema.org/Oncologic"
+    },
+    {
+      "@type": "ResearchOrganization",
+      "@id": "https://kangshengxiang.com/#research-organization",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "url": "https://kangshengxiang.com/",
+      "parentOrganization": {
+        "@id": "https://kangshengxiang.com/#organization"
+      },
+      "knowsAbout": [
+        "Traditional Chinese medicine",
+        "Integrative medicine research",
+        "Cancer supportive care",
+        "Liver cancer supportive care",
+        "Breast cancer supportive care"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kangshengxiang.com/#website",
+      "url": "https://kangshengxiang.com/",
+      "name": "Beijing Kangshengxiang TCM Research Institute",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://kangshengxiang.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://kangshengxiang.com/en/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kangshengxiang.com/en/"
+        }
+      ]
+    }
+  ]
+}
